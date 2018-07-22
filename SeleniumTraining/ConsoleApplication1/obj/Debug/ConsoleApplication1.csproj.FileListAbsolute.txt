@@ -1,1 +1,0 @@
-D:\workspace_csharp_selenium\SeleniumTraining\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config

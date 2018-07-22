@@ -18,3 +18,6 @@ D:\workspace_csharp_selenium\SeleniumTraining\SeleniumTraining\bin\Debug\WebDriv
 D:\workspace_csharp_selenium\SeleniumTraining\SeleniumTraining\bin\Debug\WebDriver.xml
 D:\workspace_csharp_selenium\SeleniumTraining\SeleniumTraining\bin\Debug\WebDriver.Support.xml
 D:\workspace_csharp_selenium\SeleniumTraining\SeleniumTraining\obj\Debug\SeleniumTraining.csprojResolveAssemblyReference.cache
+D:\workspace_csharp_selenium\SeleniumTraining\SeleniumTraining\bin\Debug\nunit.framework.dll
+D:\workspace_csharp_selenium\SeleniumTraining\SeleniumTraining\bin\Debug\nunit.framework.pdb
+D:\workspace_csharp_selenium\SeleniumTraining\SeleniumTraining\bin\Debug\nunit.framework.xml

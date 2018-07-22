@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support;
 using OpenQA.Selenium.Chrome;
@@ -13,13 +14,27 @@ namespace SeleniumTraining
     {
         static void Main(string[] args)
         {
-            BringUpBrowser browser = new BringUpBrowser("chrome", "http://testing.todvachev.com/");
-            IWebElement photos = browser.Driver.FindElement(By.XPath("//img[@class='alignnone wp-image-37 size-full']"));
-            Console.WriteLine(photos.GetAttribute("src"));
-            BringUpBrowser browser2 = new BringUpBrowser("chrome", photos.GetAttribute("src").ToString());
+
+            // Check boxes
+            BringUpBrowser browser = new BringUpBrowser("chrome", "http://testing.todvachev.com/special-elements/check-button-test-3/");
+            List <IWebElement> checkboxes = browser.Driver.FindElements(By.Name("vehicle")).ToList();
+            foreach( IWebElement checkbox in checkboxes)
+            {
+                // make this as a NUnit test to stop using the Main methon probably :) 
+                if (checkbox.Selected)
+                {
+                    Console.WriteLine("Checkox with value \"" + checkbox.GetAttribute("value") + "\" is CHECKED");
+                    
+                }
+                else
+                {
+                    Console.WriteLine("Checkox with value \"" + checkbox.GetAttribute("value") + "\" is NOT CHECKED");
+                }
+
+            }
+
             Console.ReadLine();
             browser.Driver.Quit();
-            browser2.Driver.Quit();
 
         }
     }

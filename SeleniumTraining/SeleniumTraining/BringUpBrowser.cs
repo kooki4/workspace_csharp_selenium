@@ -10,10 +10,14 @@ using OpenQA.Selenium.Firefox;
 
 namespace SeleniumTraining
 {
-    class BringUpBrowser
+    public class BringUpBrowser
     {
         public IWebDriver Driver { get; }
 
+        public BringUpBrowser()
+        {
+              
+        }
         public BringUpBrowser(string type, string uri)
         { 
             if (type.Equals("chrome"))

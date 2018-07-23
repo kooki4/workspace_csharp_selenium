@@ -24,11 +24,13 @@ namespace SeleniumTraining
             {
                 this.Driver = new ChromeDriver();
                 this.Driver.Url = uri;
+                this.Driver.Manage().Window.Maximize();
             }
             else if (type.Equals("firefox"))
             {
                 this.Driver = new FirefoxDriver();
                 this.Driver.Url = uri;
+                this.Driver.Manage().Window.Maximize();
             }
         }
 

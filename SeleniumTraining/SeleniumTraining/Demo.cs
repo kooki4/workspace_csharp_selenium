@@ -21,6 +21,8 @@ namespace SeleniumTraining
             SelectElement options = new SelectElement(dropDown);
             options.SelectByText("Saab");
             Console.WriteLine(options.IsMultiple);
+            WebDriverWait bla = new WebDriverWait(browser.Driver, TimeSpan.FromSeconds(30));
+            bla.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("")));
             
             
             /*

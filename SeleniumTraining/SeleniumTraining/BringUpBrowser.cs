@@ -38,6 +38,10 @@ namespace SeleniumTraining
             }
 
         }
+        internal void Wait()
+        {
+
+        }
 
     }
 }

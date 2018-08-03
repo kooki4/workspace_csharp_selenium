@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support;
-using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Chrome;
-
+using SeleniumExtras.WaitHelpers;
+using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumTraining
 {
@@ -18,11 +18,11 @@ namespace SeleniumTraining
         {
             BringUpBrowser browser = new BringUpBrowser("chrome", "http://testing.todvachev.com/special-elements/drop-down-menu-test/");
             IWebElement dropDown = browser.Driver.FindElement(By.XPath("//select[@name='DropDownTest']"));
-            SelectElement options = new SelectElement(dropDown);
+            OpenQA.Selenium.Support.UI.SelectElement options = new SelectElement(dropDown);
             options.SelectByText("Saab");
             Console.WriteLine(options.IsMultiple);
-            WebDriverWait bla = new WebDriverWait(browser.Driver, TimeSpan.FromSeconds(30));
-            bla.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("")));
+            OpenQA.Selenium.Support.UI.WebDriverWait bla = new WebDriverWait(browser.Driver, TimeSpan.FromSeconds(30));
+            bla.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("")));
             
             
             /*

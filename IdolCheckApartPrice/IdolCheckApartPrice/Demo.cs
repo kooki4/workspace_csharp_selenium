@@ -21,6 +21,8 @@ namespace IdolCheckApartPrice
             IWebElement sqrPrice = driver.FindElement(By.XPath("//em[contains(text(),'1 063')]"));
             Console.WriteLine(sqrPrice.Text);
             Assert.AreEqual("(1 063 евро/кв.м)", sqrPrice.Text);
+            Console.ReadLine();
+            driver.Close();
         }
     }
 }

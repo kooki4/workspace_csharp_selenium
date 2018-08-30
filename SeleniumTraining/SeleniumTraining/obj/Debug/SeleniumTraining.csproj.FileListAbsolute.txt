@@ -35,3 +35,4 @@ D:\workspace_csharp_selenium\SeleniumTraining\SeleniumTraining\bin\Debug\WebDriv
 D:\workspace_csharp_selenium\SeleniumTraining\SeleniumTraining\bin\Debug\WebDriver.Support.xml
 D:\workspace_csharp_selenium\SeleniumTraining\SeleniumTraining\obj\Debug\ConsoleApplication1.exe
 D:\workspace_csharp_selenium\SeleniumTraining\SeleniumTraining\obj\Debug\ConsoleApplication1.pdb
+C:\Users\C15108A\Source\Repos\workspace_csharp_selenium\SeleniumTraining\SeleniumTraining\bin\Debug\SeleniumExtras.WaitHelpers.dll

@@ -10,6 +10,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace ConsoleApplication1
 {
+    [TestFixture]
     class NUnitTestsInitialSetup
     {
         BringUpBrowser browser;
@@ -26,7 +27,7 @@ namespace ConsoleApplication1
         public void GetTitleOfHomepage()
         {
             Assert.AreEqual("Dir.bg - Българският Интернет портал!", browser.Driver.Title);
-            bla.Until(ExpectedConditions.(By.Id("g")));
+            bla.Until(ExpectedConditions.ElementIsVisible(By.Id("g")));
         }
 
        [TearDown]
